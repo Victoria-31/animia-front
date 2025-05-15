@@ -1,0 +1,28 @@
+@use "styles" as *;
+section {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    height: 44vh;
+    img {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        max-width: 100%    }
+}
+
+
+@media (min-width: 768px) {
+
+    section img {
+    width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    
+    section img {
+    width: 30%;
+    }
+  }
