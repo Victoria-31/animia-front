@@ -1,0 +1,19 @@
+@use 'styles' as *;
+
+header {
+    background-color: $secondary-color;
+    // color: white;
+    padding: 1rem;
+    display: flex;
+   justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: $primary-color;
+    }
+  }
+  
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+  }

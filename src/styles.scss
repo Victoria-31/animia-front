@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #222222;
+$secondary-color: #C8B08C;
+$danger-color: #f44336;
+$light-color: #f9f9f9;
+$dark-color: #000000;
+
+$font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $primary-color;
+}
+
