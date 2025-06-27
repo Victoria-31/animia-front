@@ -1,27 +1,31 @@
 @use "styles" as *;
+
 section:first-of-type {
     background-color: $secondary-color;
     display: flex;
     justify-content: center; 
     align-items: center;      
     height: 44vh;
+    
     img {
         object-fit: cover;
         display: block;
         height: 100%;
-        max-width: 100%    }
+        max-width: 100%;
+    }
 }
 
-section:nth-of-type(2){
+section:nth-of-type(2) {
     padding: 2rem;
     color: $font-color;
     font-size: 0.9rem;
+    
     h1 {
         padding-bottom: 1rem;
     }
 }
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
     padding: 2rem 2rem 0 2rem;
     color: $light-color;
     background-color: $primary-color;
@@ -29,6 +33,7 @@ section:nth-of-type(3){
 
     h2 {
         padding-bottom: 1rem;
+        
         strong {
             color: $secondary-color;
         }
@@ -42,29 +47,60 @@ section:nth-of-type(3){
         color: $light-color;
         text-decoration: none;
         font-weight: 600;
-        img{
-            width:30vw;
+        
+        img {
+            width: 30vw;
         }
     }
-
 }
 
-div {
-    height: 0.6px;
-    background-color: $light-color;
-    padding: 0 2rem;
+.addAnimals {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
-
-    section img {
-    width: 50%;
+    section:first-of-type img {
+        width: 50%;
+        border: none;
     }
-  }
+ 
+    section:nth-of-type(2), 
+    section:nth-of-type(3) {
+        padding: 10rem;
+     
+    }
 
-  @media (min-width: 1024px) {
+    section:nth-of-type(3) a img {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    section:first-of-type img {
+        width: 30%;
+    }
     
-    section img {
-    width: 30%;
+    section:nth-of-type(3) a img {
+        width: 20vw; 
     }
-  }
+
+    .addAnimals {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    section:nth-of-type(2), 
+    section:nth-of-type(3) {
+        padding: 10rem 20rem;
+    }
+
+    section:nth-of-type(3) a img {
+        width: 12vw;
+        padding: 4rem 0 0 0;
+    }
+}
